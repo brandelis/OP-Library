@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Library</title>
+  <link rel="stylesheet" href="styles.css"> <style>
+    /* You can remove the CSS from here, it's now in styles.css */
+  </style>
+</head>
+<body>
+  <h1>My Simple Library</h1>
+
+  <div>
+    <h2>Add New Book</h2>
+    <label for="title">Title:</label>
+    <input type="text" id="title"><br><br>
+    <label for="author">Author:</label>
+    <input type="text" id="author"><br><br>
+    <label for="pages">Pages:</label>
+    <input type="number" id="pages"><br><br>
+    <label for="isRead">Read:</label>
+    <input type="checkbox" id="isRead"><br><br>
+    <button onclick="addNewBook()">Add Book</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Retrieve Book by ID</h2>
+    <label for="getBookId">Enter Book ID:</label>
+    <input type="text" id="getBookId"><br><br>
+    <button onclick="getBookById()">Retrieve Book</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Show All Books (Alphabetical)</h2>
+    <button onclick="showAllBooks()">Show All Books</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h2>Delete Book by ID</h2>
+    <label for="deleteBookId">Enter Book ID:</label>
+    <input type="text" id="deleteBookId"><br><br>
+    <button onclick="deleteBookById()">Delete Book</button>
+  </div>
+
+  <hr>
+
+  <div id="output"></div>
+
+  <script src="library.js"></script>
+
+</body>
+</html>
